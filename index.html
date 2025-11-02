@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinic Patient Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Clinic Patient Registration</h2>
+
+    <form id="registrationForm">
+      <label>Full Name:</label>
+      <input type="text" id="fullName" required>
+
+      <label>Age:</label>
+      <input type="number" id="age" min="0" required>
+
+      <label>Phone Number:</label>
+      <input type="tel" id="phone" placeholder="+880..." required>
+
+      <label>Email Address:</label>
+      <input type="email" id="email" required>
+
+      <label>Insurance Provider:</label>
+      <select id="provider" required>
+        <option value="">Select Provider</option>
+        <option value="GreenLife">GreenLife</option>
+        <option value="MediCare">MediCare</option>
+        <option value="Aetna">Aetna</option>
+        <option value="Others">Others</option>
+      </select>
+
+      <label>Insurance Policy Number:</label>
+      <input type="text" id="policyNumber" required>
+
+      <h3>Additional Information</h3>
+
+      <label>Username:</label>
+      <input type="text" id="username" required>
+
+      <label>Password:</label>
+      <input type="password" id="password" required>
+
+      <label>Confirm Password:</label>
+      <input type="password" id="confirmPassword" required>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
